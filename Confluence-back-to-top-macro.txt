@@ -1,0 +1,53 @@
+## Macro title: Back To Top
+## Macro has a body: N
+## Body processing:  No Body
+## Output: Selected output option
+##
+## Developed by: Rowan Matulis
+## Date created: 1/10/2014
+## Installed by: Rowan Matulis
+## This is an example macro
+## @noparams
+
+<script>
+AJS.$(document).ready(function() {
+var offset = 220;
+var duration = 500;
+AJS.$(window).scroll(function() {
+if (AJS.$(this).scrollTop() > offset) {
+AJS.$('.bk-to-top').fadeIn(duration);
+} else {
+AJS.$('.bk-to-top').fadeOut(duration);
+}
+});
+
+AJS.$('.bk-to-top').click(function(event) {
+event.preventDefault();
+AJS.$('html, body').animate({scrollTop: 0}, duration);
+return false;
+})
+});
+</script>
+<style>
+.bk-to-top {
+position: fixed;
+bottom: 2em;
+right: 0px;
+color: #ffffff !important;
+background-color: rgb(0,0,0);
+font-size: 12px;
+padding: 1em;
+display: none;
+z-index: 9999 !important;
+  -moz-border-radius: 6px !important;      
+  -webkit-border-radius:6px !important;      
+  -khtml-border-radius:6px !important;      
+  border-radius: 6px !important; 
+}
+.back-to-top a {
+color: #ffffff !important;
+text-decoration: none !important;
+}
+</style>
+
+<a href="#" class="bk-to-top"><strong>Back to Top</strong></a>
