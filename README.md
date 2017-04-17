@@ -6,4 +6,4 @@ This macro offers a jquery back to top button.
 
 Once you save the macro the best way to use it is via editing "space layout" to referance it.
 
-Currently i have this working for my compant on confluence 5.1.5
+Currently i have this working for my compant on confluence 5.1.5, 5.8.18 & 5.10.0
